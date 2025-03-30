@@ -7,7 +7,8 @@
     },
     "schematics-dialog": {
       "description": "Componente de dialog.",
-      "factory": "./schematics-study/index#schematicsDialog"
+      "factory": "./schematics-study/index#schematicsDialog",
+      "schema": "./schematics-dialog/schema.json"
     }
   }
 }
