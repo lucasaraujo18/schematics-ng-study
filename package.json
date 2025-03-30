@@ -9,7 +9,8 @@
     "test": "ng test",
     "schematics:install": "cd ./schematics-study && npm install",
     "schematics:build": "cd ./schematics-study && npm run build",
-    "schematics:link": "cd ./schematics-study && npm link"
+    "schematics:link": "cd ./schematics-study && npm link",
+    "schematics:custom-dialog": "ng g schematics-study:schematic-dialog"
   },
   "private": true,
   "dependencies": {
