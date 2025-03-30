@@ -15,11 +15,15 @@
   "dependencies": {
     "@angular-devkit/core": "^19.2.5",
     "@angular-devkit/schematics": "^19.2.5",
+    "@angular/cdk": "^19.2.7",
+    "@angular/core": "^19.2.4",
+    "@angular/material": "^19.2.7",
+    "@schematics/angular": "^19.2.5",
     "typescript": "~5.7.2"
   },
   "devDependencies": {
-    "@types/node": "^18.18.0",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
     "jasmine": "^5.0.0"
   }
 }

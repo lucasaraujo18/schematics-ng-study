@@ -4,6 +4,10 @@
     "schematics-study": {
       "description": "A blank schematic.",
       "factory": "./schematics-study/index#schematicsStudy"
+    },
+    "schematics-dialog": {
+      "description": "Componente de dialog.",
+      "factory": "./schematics-study/index#schematicsDialog"
     }
   }
 }
