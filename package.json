@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "schematics:install": "cd ./schematics-study && npm install",
+    "schematics:build": "cd ./schematics-study && npm run build",
+    "schematics:link": "cd ./schematics-study && npm link"
   },
   "private": true,
   "dependencies": {
