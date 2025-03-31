@@ -10,7 +10,8 @@
     "schematics:install": "cd ./schematics-study && npm install",
     "schematics:build": "cd ./schematics-study && npm run build",
     "schematics:link": "cd ./schematics-study && npm link",
-    "schematics:custom-dialog": "ng g schematics-study:schematic-dialog"
+    "schematics:custom-dialog": "ng g schematics-study:schematics-dialog --name=meu-dialogo --className=SuperDialogComponent",
+    "schematics:run": "ng g schematics-study:schematics-dialog"
   },
   "private": true,
   "dependencies": {
