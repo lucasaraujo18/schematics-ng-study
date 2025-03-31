@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "id": "schematic-dialog",
+    "$id": "schematic-dialog",
     "title": "Schematic Dialog",
     "type": "object",
     "properties": {

@@ -3,12 +3,12 @@
   "schematics": {
     "schematics-study": {
       "description": "A blank schematic.",
-      "factory": "./schematics-study/index#schematicsStudy"
+      "factory": "./src/schematics-study/index#schematicsStudy"
     },
     "schematics-dialog": {
       "description": "Componente de dialog.",
-      "factory": "./schematics-study/index#schematicsDialog",
-      "schema": "./schematics-dialog/schema.json"
+      "factory": "./src/schematics-dialog/index#schematicsDialog",
+      "schema": "./src/schematics-dialog/schema.json"
     }
   }
 }
