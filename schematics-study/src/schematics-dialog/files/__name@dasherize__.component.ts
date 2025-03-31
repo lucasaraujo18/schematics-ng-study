@@ -1,15 +1,16 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, Inject, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: '<%= selector %>',
+  selector: 'app-<%= dasherize(name) %>',
   templateUrl: './<%= dasherize(name) %>.component.html',
   styleUrls: ['./<%= dasherize(name) %>.component.scss'],
 })
 
 export class <%= classify(name) %>Component implements OnInit, OnDestroy {
-  private readonly destroy$ = new Subject();
+  private destroy$ = new Subject();
 
   constructor(
      public dialogRef: MatDialogRef<<%= classify(name) %>Component>,
@@ -22,7 +23,7 @@ export class <%= classify(name) %>Component implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.destroy$.next();
-    this.destroy$.complete();
+    this.destroy$.unsubscribe();
   }
 
   close(): void {

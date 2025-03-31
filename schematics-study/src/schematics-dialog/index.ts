@@ -5,14 +5,10 @@ import { strings } from '@angular-devkit/core';
 // per file.
 export function schematicsDialog(options: any): Rule {
   return () => {
-    if (!options.className) {
-      options.className = strings.classify(options.name) + 'DialogComponent';
-    }
-
     const sourceTemplates = apply(url('./files'), [
       template({
+        ...strings,
         ...options,
-        classify: strings.classify,
       }),
     ]);
 
