@@ -12,17 +12,22 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 export class <%= classify(name) %>Component implements OnInit, OnDestroy {
   private destroy$ = new Subject();
 
+  public title!: string;
+  public mode!: string;
+
   constructor(
      public dialogRef: MatDialogRef<<%= classify(name) %>Component>,
     @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
+  ) {
+    this.title = this.data.titulo;
+    this.mode = this.data.mode;
+  }
 
   ngOnInit(): void {
-    console.log('data => ', this.data);
+    
   }
 
   ngOnDestroy() {
-    this.destroy$.next();
     this.destroy$.unsubscribe();
   }
 

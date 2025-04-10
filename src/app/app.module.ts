@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConfirmacaoComponent } from './components/confirmacao.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
-    MatDialogModule
+    MatDialogModule,
+    MatTabsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

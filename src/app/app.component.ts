@@ -20,7 +20,7 @@ export class AppComponent {
       height: '400px',
       width: '600px',
       data: {
-        titulo: 'title',
+        titulo: 'Nome qualquer',
         mode: 'editar'
       }
     });
